@@ -1,0 +1,48 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+  GOV.UK Form Builder
+{% endblock %}
+
+{% block head %}
+  {% include "includes/head.html" %}
+  {% include "form-builder/includes/css.html" %}
+{% endblock %}
+
+{% block content %}
+
+<main id="content" role="main">
+    <div class="grid-row">
+
+        <div class="column-full">
+
+            {% include "includes/phase_banner_alpha.html" %}
+        </div>
+
+        <div class="column-two-thirds">
+
+            <h1 class="heading-xlarge">
+                Form Builder
+                <span class="heading-secondary">{{releaseVersion}}</span>
+            </h1>
+
+        </div>
+    
+    </div>
+
+    <div class="grid-row">
+
+        <div class="column-one-third">
+            <h3>Form Elements</h3>
+        </div>
+
+        <div class="column-two-thirds">
+            <h3>Form Preview</h3>
+        </div>
+
+    </div>
+</main>
+
+{% endblock %}
+
+
