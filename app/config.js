@@ -4,7 +4,7 @@
 
 module.exports = {
   // Service name used in header. Eg: 'Renew your passport'
-  serviceName: 'Form Builder',
+  serviceName: 'Dilwoar\'s Prototype Designer',
 
   // Default port that prototype runs on
   port: '3000',
