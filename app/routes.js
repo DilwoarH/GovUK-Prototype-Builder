@@ -7,5 +7,8 @@ router.get('/', function (req, res) {
 })
 
 // add your routes here
+router.get('/designer', function (req, res) {
+  res.render('designer/index')
+})
 
 module.exports = router
