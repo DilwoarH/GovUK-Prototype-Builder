@@ -15,6 +15,7 @@ GOVUK.PrototypeDesigner.Elements = class
     initFields()
     {
         var fieldTypes = [
+            'h1',
             'input',
             'textarea',
             'select',
