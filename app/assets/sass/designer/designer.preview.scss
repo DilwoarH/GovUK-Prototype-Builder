@@ -1,3 +1,9 @@
 .prototype-preview {
-    
+    .govuk-designer-element {
+        padding: 10px;
+    }
+    .govuk-designer-element:hover, .govuk-designer-element:focus, .ui-sortable-start {
+        background-color: #f1f1f1;
+        cursor: pointer;
+    }
 }

@@ -6,7 +6,7 @@ GOVUK.PrototypeDesigner.Templates = class
 
     static getTemplate(template_name)
     {
-        this.group_class = 'govuk-designer-element';
+        this.group_class = 'govuk-designer-element sortable';
         return this[`${template_name}`]();
     }
 
