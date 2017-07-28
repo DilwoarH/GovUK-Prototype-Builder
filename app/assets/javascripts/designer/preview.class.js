@@ -9,6 +9,7 @@ GOVUK.PrototypeDesigner.Preview = class
     initListeners()
     {
         this.initSortable();
+        this.initDeleteFieldBtns();
     }
 
     initSortable()
@@ -24,6 +25,13 @@ GOVUK.PrototypeDesigner.Preview = class
 
             },
             axis: 'y'
+        });
+    }
+
+    initDeleteFieldBtns()
+    {
+        $( ".prototype-preview" ).on('click', '.delete-feild', function(){
+            $(this).parent().remove();
         });
     }
 }
