@@ -125,4 +125,32 @@ GOVUK.PrototypeDesigner.Templates = class
             <input type="file" id="file-input">
         `;
     }
+
+    static date()
+    {
+        return `
+            <fieldset>
+            <legend>
+                <span class="form-label-bold">
+                What is your date of birth?
+                </span>
+                <span class="form-hint">For example, 31 3 1980</span>
+            </legend>
+            <div class="form-date">
+                <div class="form-group form-group-day">
+                <label class="form-label" for="dob-day">Day</label>
+                <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+                </div>
+                <div class="form-group form-group-month">
+                <label class="form-label" for="dob-month">Month</label>
+                <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+                </div>
+                <div class="form-group form-group-year">
+                <label class="form-label" for="dob-year">Year</label>
+                <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+                </div>
+            </div>
+            </fieldset>
+        `;
+    }
 }

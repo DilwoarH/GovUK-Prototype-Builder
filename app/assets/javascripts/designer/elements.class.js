@@ -21,7 +21,8 @@ GOVUK.PrototypeDesigner.Elements = class
             'select',
             'radio',
             'checkbox',
-            'upload'
+            'upload',
+            'date'
         ];
 
         for( var i in fieldTypes )
