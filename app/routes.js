@@ -8,7 +8,7 @@ router.get('/', function (req, res) {
 
 // Route index page
 router.get('/search', function (req, res) {
-  res.render('search')
+  res.render('template-editor/search')
 })
 
 // add your routes here

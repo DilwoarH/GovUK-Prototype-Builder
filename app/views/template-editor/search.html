@@ -4,6 +4,7 @@
 
 {% block head %}
 <link rel="stylesheet" href="https://www.preview.marketplace.team/static/stylesheets/application.css"> 
+{% include "./includes/styles.html" %}
 {% endblock %} 
 
 {% block content %}
@@ -690,5 +691,12 @@
         </div>
     </div>
 </main>
+
+
+{% endblock %}
+
+{% block page_scripts %}
+
+{% include "./includes/scripts.html" %}
 
 {% endblock %}
