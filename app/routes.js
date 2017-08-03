@@ -6,6 +6,11 @@ router.get('/', function (req, res) {
   res.render('index')
 })
 
+// Route index page
+router.get('/search', function (req, res) {
+  res.render('search')
+})
+
 // add your routes here
 router.get('/designer', function (req, res) {
   res.render('designer/index')
