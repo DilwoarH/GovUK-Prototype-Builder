@@ -16,4 +16,10 @@ router.get('/designer', function (req, res) {
   res.render('designer/index')
 })
 
+
+// add your routes here
+router.get('/prototype-designer', function (req, res) {
+  res.render('prototype-designer/index')
+})
+
 module.exports = router

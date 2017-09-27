@@ -12,7 +12,7 @@ var sourcemaps = require('gulp-sourcemaps')
 var config = require('./config.json')
 
 gulp.task('sass', function () {
-  return gulp.src([config.paths.assets + '/sass/*.scss', config.paths.assets + '/sass/designer/*.scss'])
+  return gulp.src([config.paths.assets + '/sass/*.scss', config.paths.assets + '/sass/designer/*.scss', config.paths.assets + '/sass/prototype-designer/*.scss'])
   .pipe(sourcemaps.init())
   .pipe(sass({outputStyle: 'expanded',
     includePaths: ['govuk_modules/govuk_frontend_toolkit/stylesheets',

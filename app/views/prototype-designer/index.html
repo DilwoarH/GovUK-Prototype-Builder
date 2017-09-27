@@ -1,0 +1,44 @@
+{% extends "layout.html" %}
+
+{% block page_title %}
+    Prototype Designer
+{% endblock %}
+
+{% block head %}
+    {% include "includes/head.html" %}
+    {% include "./includes/css.html" %}
+{% endblock %}
+
+{% block service_name %}
+    Prototype Designer
+{% endblock %}
+
+{% block content %}
+
+<main id="page-composer" role="main">
+    <div class="grid-row">
+
+        <div class="column-one-half">
+            {% include "./subviews/preview.html" %}
+        </div>
+
+        <div class="column-one-half">
+            {% include "./subviews/source.editor.html" %}
+        </div>
+    
+
+       <!--  <div class="column-one-quarter">
+            {% include "./subviews/element.selector.html" %}
+        </div> -->
+
+    </div>
+</main>
+
+{% endblock %}
+
+{% block page_scripts %}
+
+{% include "./includes/scripts.html" %}
+
+{% endblock %}
+

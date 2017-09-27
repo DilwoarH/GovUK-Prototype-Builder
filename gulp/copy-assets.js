@@ -9,7 +9,8 @@ var config = require('./config.json')
 
 gulp.task('copy-assets', function () {
   return gulp.src(['!' + config.paths.assets + 'sass{,/**/*}',
-    config.paths.assets + '/**', config.paths.assets + '/designer/**'])
+    config.paths.assets + '/**', config.paths.assets + '/designer/**',
+    config.paths.assets + '/**', config.paths.assets + '/prototype-designer/**'])
   .pipe(gulp.dest(config.paths.public))
 })
 

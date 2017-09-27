@@ -1,0 +1,32 @@
+@import 'govuk-elements';
+
+#global-header .header-proposition #proposition-name {
+  text-transform: uppercase;
+  font-weight: 100;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+#global-header-bar {
+  width:100%;
+  max-width: 100%;
+  background-color: $panel-colour;
+}
+
+#page-composer{
+  min-height: 100px;
+
+  #editor { 
+      padding: 20px; 
+      margin: 20px;
+      width: 90%; 
+      height: 700px;
+  }
+
+  #prototypeCanvas{
+    box-shadow: 0 0px 5px 0 rgba(0,0,0,0.2),0 0px 5px 0 rgba(0,0,0,0.19);
+    padding: 5px;
+    margin: 5px;
+  }
+
+}
