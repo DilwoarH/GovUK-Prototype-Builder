@@ -16,17 +16,23 @@
 #page-composer{
   min-height: 100px;
 
+  .column-one-half {
+    padding: 10px;
+  }
+
   #editor { 
-      padding: 20px; 
-      margin: 20px;
-      width: 90%; 
+      box-shadow: 0 0px 5px 0 rgba(0,0,0,0.2),0 0px 5px 0 rgba(0,0,0,0.19);
+      padding: 5px;
+      margin: 0px;
+      width: 95%; 
       min-height: 750px;
   }
 
   #prototypeCanvas{
     box-shadow: 0 0px 5px 0 rgba(0,0,0,0.2),0 0px 5px 0 rgba(0,0,0,0.19);
     padding: 5px;
-    margin: 5px;
+    margin: 0px;
+    margin-left: 10px;
     min-height: 750px;    
   }
 
