@@ -1,14 +1,3 @@
 
 <script src="/public/lib/ace-editor/src/ace.js" type="text/javascript" charset="utf-8"></script>
-<script>
-    var editor = ace.edit("editor");
-    editor.setTheme("ace/theme/monokai");
-    editor.session.setMode("ace/mode/html");
-    editor.on('change', function(){
-      var value = editor.getSession().getValue();
-      $('#prototypeCanvas').html(value);
-    });
-    $.get('/public/lib/ace-editor/default.template').done(function(result){
-      editor.setValue(result);
-    })
-</script>
+<script src="/public/javascripts/prototype-designer/source.editor.js" type="text/javascript" charset="utf-8"></script>
