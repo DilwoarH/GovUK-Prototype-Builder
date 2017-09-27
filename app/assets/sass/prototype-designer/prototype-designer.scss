@@ -15,6 +15,7 @@
 
 #page-composer{
   min-height: 100px;
+  margin: 10px;
 
   .column-one-half {
     padding: 10px;
@@ -34,6 +35,14 @@
     margin: 0px;
     margin-left: 10px;
     min-height: 750px;    
+  }
+
+  .downloadSource {
+    float: right;
+
+    .form-control, .button{
+      width: 100%;
+    }
   }
 
 }

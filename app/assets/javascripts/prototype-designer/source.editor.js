@@ -3,6 +3,7 @@ class sourceEditor
     constructor()
     {
         this.init();
+        this.initDownload();
     }
 
     init()
@@ -17,6 +18,15 @@ class sourceEditor
         $.get('/public/lib/ace-editor/default.template').done(function(result){
           editor.setValue(result);
         })
+    }
+
+    initDownload()
+    {
+      $('#downloadSourceBtn').on('click', function(){
+        var data = $('#prototypeCanvas').html();
+        var filename = $('#downloadSourceName').val() || "prototype-template";
+        download(data, filename + ".html", "text/html");
+      });
     }
 
 }
