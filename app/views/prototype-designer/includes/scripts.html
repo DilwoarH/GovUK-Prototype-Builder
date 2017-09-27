@@ -1,5 +1,5 @@
 
-<script src="/public/lib/ace-editor/src-noconflict/ace.js" type="text/javascript" charset="utf-8"></script>
+<script src="/public/lib/ace-editor/src/ace.js" type="text/javascript" charset="utf-8"></script>
 <script>
     var editor = ace.edit("editor");
     editor.setTheme("ace/theme/monokai");
@@ -8,4 +8,7 @@
       var value = editor.getSession().getValue();
       $('#prototypeCanvas').html(value);
     });
+    $.get('/public/lib/ace-editor/default.template').done(function(result){
+      editor.setValue(result);
+    })
 </script>
