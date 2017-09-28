@@ -5,7 +5,7 @@
   position: fixed; /* Stay in place */
   z-index: 1; /* Stay on top */
   top: 0;
-  right: 0;
+  left: 0;
   background-color: #111; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
@@ -33,12 +33,12 @@
   top: 0;
   right: 25px;
   font-size: 36px;
-  margin-right: 0px;
+  margin-s: 0px;
 }
 
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #prototype-designer {
-  transition: margin-right .5s;
+  transition: margin-left .5s;
   padding: 20px;
 }
 

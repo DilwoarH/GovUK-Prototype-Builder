@@ -11,7 +11,7 @@ class sourceEditor
     {
         var _this = this;
         _this.editor = ace.edit("editor");
-        _this.editor.setTheme("ace/theme/monokai");
+        //_this.editor.setTheme("ace/theme/monokai");
         _this.editor.session.setMode("ace/mode/html");
         _this.editor.on('change', function(){
             var value = _this.editor.getSession().getValue();

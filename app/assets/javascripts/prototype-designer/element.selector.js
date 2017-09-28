@@ -32,13 +32,13 @@ class elementsSelector
     openNav()
     {
         $(this._navId).css('width', "250px");
-        $(this._mainContentId).css('margin-right', "250px");
+        $(this._mainContentId).css('margin-left', "250px");
     }
 
     closeNav()
     {
         $(this._navId).css('width', "0");
-        $(this._mainContentId).css('margin-right', "0");
+        $(this._mainContentId).css('margin-left', "0");
     }
 
     /* ADD ELEMENTS */
